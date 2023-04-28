@@ -1,0 +1,22 @@
+/*Maneira de importar e usar o css dentro do HTML sem encher de link o arquivo HTML.*/
+@import url(styles/header.css);
+@import url(styles/banner.css);
+@import url(styles/carousel.css);
+@import url(styles/topics.css);
+@import url(styles/contact.css);
+@import url(styles/footer.css);
+
+:root {
+    --background-color: #bdc3c7;
+    --white-main: #FFF;
+    --orange: #EB9B00;
+    --blue-gradient: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --main-font: "Poppins";
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+}
