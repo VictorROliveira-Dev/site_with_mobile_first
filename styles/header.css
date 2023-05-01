@@ -29,7 +29,7 @@
     display: none;
     position: absolute;
     top: 100%;
-    width: 60vw;
+    width: auto;
 }
 
 /*Reaparece com o menu, caso ele seja selecionado*/
@@ -102,6 +102,15 @@
     }
 
     .container-transparent {
+        display: none;
+    }
+
+    .options__button:checked~.list-menu {
+        display: block;
+        width: auto;
+    }
+
+    .options__button {
         display: none;
     }
 }

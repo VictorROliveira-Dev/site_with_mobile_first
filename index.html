@@ -48,13 +48,36 @@
         </div>
 
         <ul class="options">
-            <li class="options__item">Categorias</li>
+            <input class="options__button" type="checkbox" id="options-menu">
+            <label for="options-menu">
+                <li class="options__item">Categorias</li>
+            </label>
+
+            <ul class="list-menu">
+                <li class="list-menu__item">
+                    <a class="list-menu__link" href="#">Programação</a>
+                </li>
+                <li class="list-menu__item">
+                    <a class="list-menu__link" href="#">Front-end</a>
+                </li>
+                <li class="list-menu__item">
+                    <a class="list-menu__link" href="#">Infraestrutura</a>
+                </li>
+                <li class="list-menu__item">
+                    <a class="list-menu__link" href="#">Business</a>
+                </li>
+                <li class="list-menu__item">
+                    <a class="list-menu__link" href="#">Designer & UX</a>
+                </li>
+            </ul>
+
             <li class="options__item"><a class="options__link" href="#">Favoritos</a></li>
             <li class="options__item"><a class="options__link" href="#">Minha estante</a></li>
         </ul>
 
         <div class="container">
-            <a href="#"><img class="container__image container-transparent" src="img/Favoritos.svg" alt="Imagem favoritos"></a>
+            <a href="#"><img class="container__image container-transparent" src="img/Favoritos.svg"
+                    alt="Imagem favoritos"></a>
             <a href="#"><img class="container__image" src="img/Sacola.svg" alt="Imagem sacola de compras"></a>
             <a href="#"><img class="container__image" src="img/Usuario.svg" alt="Imagem perfil usuário"></a>
         </div>
@@ -115,7 +138,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="carrossel">
         <h2 class="carousel__title">Mais vendidos</h2>
         <!-- Slider main container -->
@@ -199,15 +222,92 @@
     </section>
 
     <section class="contact">
-        <h2 class="contact__title">Fique por dentro das novidades!</h2>
-        <p class="contact__text">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="contact__description">
+            <h2 class="contact__title">Fique por dentro das novidades!</h2>
+            <p class="contact__text">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input class="contact__email" type="email" placeholder="Cadastre seu e-mail">
     </section>
 
-    <hr/>
+    <hr />
 
     <footer class="footer">
         <h2 class="footer__title">Grupo Alura</h2>
+        <ul class="list__footer">
+            <li class="list__footer-title">Educação</li>
+            <li class="list__footer-item">
+                <img src="img/Caelum.svg" alt="Logo caelum">
+                <a class="list__footer-link" href="#">Caelum</a>
+            </li>
+            <li class="list__footer-item">
+                <img src="img/CasaDoCodigo.svg" alt="Logo casa do código">
+                <a class="list__footer-link" href="#">Casa do Código</a>
+            </li>
+        </ul>
+
+        <ul class="list__footer">
+            <li class="list__footer-title">Educação online</li>
+            <li class="list__footer-item">
+                <img src="img/Alura.svg" alt="Logo alura">
+                <a class="list__footer-link" href="#">Alura</a>
+            </li>
+            <li class="list__footer-item">
+                <img src="img/AluraEmpresas.svg" alt="Logo empresas alura">
+                <a class="list__footer-link" href="#">Alura Para Empresas</a>
+            </li>
+            <li class="list__footer-item">
+                <img src="img/AluraLatam.svg" alt="Logo alura latam">
+                <a class="list__footer-link" href="#">Alura LATAM</a>
+            </li>
+            <li class="list__footer-item">
+                <img src="img/AluraStart.svg" alt="Logo alura start">
+                <a class="list__footer-link" href="#">Alura Start</a>
+            </li>
+            <li class="list__footer-item">
+                <img src="img/MusicDot.svg" alt="Logo music dot">
+                <a class="list__footer-link" href="#">MusicDot</a>
+            </li>
+            <li class="list__footer-item">
+                <img src="img/AluraLingua.svg" alt="Logo alura língua">
+                <a class="list__footer-link" href="#">Alura Língua</a>
+            </li>
+            <li class="list__footer-item">
+                <img src="img/PM3.svg" alt="Logo PM3">
+                <a class="list__footer-link" href="#">PM3</a>
+            </li>
+        </ul>
+
+        <ul class="list__footer">
+            <li class="list__footer-title">Comunidade</li>
+            <li class="list__footer-item">
+                <img src="img/HipstersTech.svg" alt="Logo hipster tech">
+                <a class="list__footer-link" href="#">Hipsters ponto Tech</a>
+            </li>
+            <li class="list__footer-item">
+                <img src="img/Scuba.svg" alt="Logo scuba">
+                <a class="list__footer-link" href="#">Scuba Dev</a>
+            </li>
+            <li class="list__footer-item">
+                <img src="img/Layers.svg" alt="Logo alura layers">
+                <a class="list__footer-link" href="#">Layers ponto Tech</a>
+            </li>
+            <li class="list__footer-item">
+                <img src="img/LikeABoss.svg" alt="Logo like a boss">
+                <a class="list__footer-link" href="#">Like a Boss</a>
+            </li>
+            <li class="list__footer-item">
+                <img src="img/CarreiraSemFronteira.svg" alt="Logo carreira sem fronteira">
+                <a class="list__footer-link" href="#">Carreira sem Fronteira</a>
+            </li>
+            <li class="list__footer-item">
+                <img src="img/HipstersJobs.svg" alt="Logo hipsters job">
+                <a class="list__footer-link" href="#">Hipsters ponto Jobs</a>
+            </li>
+            <li class="list__footer-item">
+                <img src="img/GUJ.svg" alt="Logo GUJ">
+                <a class="list__footer-link" href="#">GUJ</a>
+            </li>
+        </ul>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
