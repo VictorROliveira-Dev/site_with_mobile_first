@@ -5,6 +5,19 @@
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
+    cursor: pointer;
+}
+
+.container__button:checked ~.container__label > .header__menu-hamburguer {
+    background-image: url(../img/MenuAberto.svg);
+}
+
+.container__button:checked ~.container__label {
+    background: var(--blue-gradient);
+}
+
+.container__label {
+    padding: 0.5em;
 }
 
 .header {
@@ -60,10 +73,8 @@
     background-color: var(--white-main);
 }
 
-.container__title {
-    display: none;
-}
-
+.container__title,
+.container__text,
 .options {
     display: none;
 }
@@ -73,7 +84,8 @@
         display: none;
     }
 
-    .container__title, .title__bold {
+    .container__title,
+    .title__bold {
         font-family: var(--secondary-font);
         font-size: 30px;
     }
@@ -112,5 +124,50 @@
 
     .options__button {
         display: none;
+    }
+
+    .options__button:checked ~.options__label > .options__item {
+        background: var(--blue-gradient);
+        color: var(--white-main);
+    }
+
+    .options__item {
+        padding: 2em 1em;
+    }
+
+    .list-menu__item:hover {
+        background: var(--blue-gradient);
+    }
+
+    .list-menu__item:hover > .list-menu__link {
+        -webkit-text-fill-color: var(--white-main);
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .container__text {
+        display: block;
+    }
+
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #000;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .header {
+        padding: 0 2em;
+    }
+
+    .options {
+        margin-right: auto;
+    }
+
+    .options__item {
+        cursor: pointer;
     }
 }
